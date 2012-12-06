@@ -59,7 +59,7 @@ void
 			memory[memory_counter] = a;
 			break;
 		case OUTPUT:
-			cout << memory[memory_counter] << endl;
+			cout << memory[memory_counter];
 			break;
 		case JUMP_IF_ZERO:
 			if(memory[memory_counter] == 0 && jump_marker > 0)
@@ -73,6 +73,8 @@ void
 				program_counter = jump_marker;
 			}
 			break;
+		case PRETTY_PRINT:
+			cout << (char)memory[memory_counter];
 	}
 	program_counter++;
 }

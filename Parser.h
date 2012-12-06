@@ -12,7 +12,8 @@ enum command_t {
 	INPUT = 4,
 	OUTPUT = 5,
 	JUMP_IF_ZERO = 6,
-	JUMP_NOT_ZERO = 7
+	JUMP_NOT_ZERO = 7,
+	PRETTY_PRINT = 13
 };
 
 class Parser
