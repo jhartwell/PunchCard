@@ -15,15 +15,35 @@ only one true operator `x` and how you modify memory all depends on the location
 Here are the different arrangements that are available:
 
 `+-----------------+` : indicates the start/end of the file
+
+
 `| - - - - - - - - |` : marks a line to be jumped to
+
+
 `| x - - - - - - - |` : moves to the next memory cell
+
+
 `| - x - - - - - - |` : increments the current cell by 1
+
+
 `| - - x - - - - - |` : decrements the current cell by 1
+
+
 `| - - - x - - - - |` : accepts input and stores it in the current cell
+
+
 `| - - - - x - - - |` : outputs the current cell to the screen
+
+
 `| - - - - x - - x |` : outputs the current cell to the screen in a pretty way (meaning will try to convert to char)
+
+
 `| - - - - - x - - |` : will jump to the last marked jumped line if current cell is equal to zero
+
+
 `| - - - - - - x - |` : will jump to the last marked jumped line if the current cell is not equal to zero
+
+
 
 ### Behind the scenes
 
@@ -43,8 +63,7 @@ An example
 Finally, we get to an example. I didn't want to put this first since a simple program is quite large. Here is a simple program that will output "HELLO" to the console.
 
 <codeblock>
-  <p>
-	+-----------------+
++-----------------+
 | - x - - - - - - |
 | - x - - - - - - |
 | - x - - - - - - |
@@ -460,11 +479,13 @@ Finally, we get to an example. I didn't want to put this first since a simple pr
 | - x - - - - - - |
 | - x - - - - - - |
 +-----------------+
-</p>
+
 </codeblock>
 
 Feedback Welcome
 ----------------
+
+
 
 I'm always looking for feedback on whatever I do and this is no exception. Love this? Hate it? Suggestions to make it better? Please let me know at jon@dontbreakthebuild.comPunchCard
 =========
